@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import techImage from '../assets/images/tech-new.jpeg'; // Import the image
 import { MdReadMore } from "react-icons/md";
-
 function Home() {
   const posts = [
     {id: 1,
