@@ -1,0 +1,317 @@
+    .container{
+        //loginm and register
+        .auth{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height:100vh ;
+            background-color:whitesmoke;
+            h1{
+                font-size: 30px;
+                color:rgb(177, 6, 6);
+                margin-bottom: 20px;
+                
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                padding: 50px;
+                background-color:rgb(228, 221, 221);
+                width: 300px;
+                gap:20px
+
+            } 
+            input{
+                    padding: 10px;
+                    width: 200px;
+                    border-bottom: 2px solid gray;
+
+                }
+            button{
+                    padding: 10px;
+                    border: none;
+                    background-color: rgb(234, 129, 129);
+                    text-align: center;
+                    color: white;
+                    border-radius: 4%;
+                    cursor: pointer;
+
+                }
+          p{
+            font-size: 12px;
+            color:red;
+            text-align: center;
+          }
+          span{
+            text-align: center;
+          }
+            
+
+
+
+
+        } 
+    }
+    .home{
+        .posts{
+            margin-top: 50px;
+            padding: 70px;
+            display: flex;
+            flex-direction:column;
+            gap: 150px;
+            .post{
+                display:flex;
+                gap: 50px;
+                &:nth-child(2n+1){
+                    flex-direction: row-reverse;
+                }
+
+                .img{
+                   flex:1;
+                   position: relative;
+                   &::after{
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgb(234, 129, 129);
+                    position: absolute;
+                    top: 20px;
+                    left: -20px;
+                    z-index: -1;
+                   } 
+                    width: 100%;
+                    max-height: 400px;
+
+                   
+                }
+                .content {
+                    flex: 3;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                  
+                    h1 {
+                      font-size: 48px;
+                    }
+                  
+                    p {
+                      font-size: 10px;
+                    }
+                    button{
+                        width: max-content;
+                        padding: 10px 20px;
+                        border: none;
+                        cursor: pointer;
+                        background-color: rgb(234, 129, 129);
+                    }
+                  }
+                  
+            }
+            
+        }
+        
+    }
+    // single page css
+    .single{
+        display: flex;
+        gap: 50px;
+        .content{
+            flex:5;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin: 0 auto;
+            padding: 3rem;
+            img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover            
+            }
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 14px;
+
+                img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .info{
+                    span{
+                        font-weight: bold;
+                    }
+                    color: black;
+                }
+                .edit{
+                    display: flex;
+                    gap: 5px;
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .postdis{
+                h1{
+                    font-size: 42px;
+                    color:#333 ;
+
+                }
+                p{
+                    text-align:justify;
+                    line-height: 30px;
+                }
+
+            }
+        }
+        .menu{
+            flex:2;
+            display:flex;
+            flex-direction: column;
+            gap: 25px;
+            h1{
+                padding: 3rem;
+
+                display: flex;
+                flex-direction: column;
+                font-size: 25px;
+                color: brown;
+                justify-content: center;
+
+            }
+             
+            
+            .post{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 3rem;
+               
+
+                img{
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+
+                }
+                h2{
+                    font-size: 20px;
+                    color: #555;
+                }
+                p{
+                    color: #555;
+                }
+                button{
+                    width: max-content;
+                    padding: 7.5px 15px;
+                    border: none;
+                    cursor: pointer;
+                    background-color: rgb(234, 129, 129);
+                }
+
+
+
+            }
+
+        }
+    }
+    // write page css
+    .add{
+        margin-bottom: 140px;
+        padding: 2rem;
+        display: flex;
+        gap: 20px;
+        .content{
+
+            color: #555;
+            flex:5;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            input{
+                padding: 10px;
+                border-radius: 1px solid lightgray;
+               
+            }
+            .editorcontainer{
+                height: 300px;
+                overflow: scroll;
+                border-radius: 1px solid lightgray;
+
+                .editor{
+                    height: 100%;
+                    border: none;
+                }
+
+                    
+            }
+        
+        }
+        .menu{
+            flex: 2;
+    
+            color: #555;
+            flex-direction: row;
+            gap:20px;
+            padding: 10px;
+            .item{
+                border-radius: 1px solid lightgray;
+                padding: 10px;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                font-size: 12px;
+                color: #555;
+                h1{
+                    font-size: 12px;
+
+                }
+                lable{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+                .buttons{
+                    display: flex;
+                    justify-content: space-between;
+                    :first-child{
+                        cursor: pointer;
+                        color: rgb(234, 129, 129);
+                        background-color: antiquewhite;
+                        border-radius: 2px solid rgb(234, 129, 129);
+                        padding: 3px 5px;
+
+                    }
+                    :last-child{
+                        cursor: pointer;
+                        color: rgb(234, 129, 129);
+                        background-color: antiquewhite;
+                        border-radius: 2px solid rgb(234, 129, 129);
+                        padding: 3px 5px;
+
+                    }
+
+                }
+                .cat{
+                    display: flex;
+                    align-items: center;
+                    color: rgb(234, 129, 129);
+                    gap: 2;
+
+
+                }
+
+
+
+                
+            }
+
+        }
+    }
+   
+    
