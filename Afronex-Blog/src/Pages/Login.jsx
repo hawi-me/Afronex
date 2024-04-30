@@ -27,9 +27,10 @@ function Login({setIsAuth}) {
         <input required type='password' placeholder='password' />
         {/* Attach the onClick event to call signInWithGoogle */}
         <button className='login-with-google-btn' onClick={signInWithGoogle}>Login</button>
+        
         <div className="flex items-center mt-4">
           <FcGoogle className="text-red-500 text-3xl mr-2" />
-          <p className="inline-block">Sign In With Google to continue</p>
+          <p className="inline-block">continue with Google Account</p>
         </div>
         <span className='text-black'>
           Don't you have an account? <Link to='/register'>Register</Link>

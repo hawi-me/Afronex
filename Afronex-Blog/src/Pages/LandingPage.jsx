@@ -20,7 +20,7 @@ const LandingPage = () => {
         </p>
         <div className="flex justify-center">
           <Link
-            to="/register"
+            to="/login"
             className="bg-white hover:bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-full shadow-lg uppercase transition duration-300"
           >
             Explore Blog

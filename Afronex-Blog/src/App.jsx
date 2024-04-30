@@ -46,8 +46,13 @@ function App() {
       element: <Layout />,
       children: [
         {
-          path:'/',
-          element : <Home />,
+          path: '/',
+          element: (
+            <>
+              <Search />
+              <Home />
+            </>
+          )
         },
         {
           path:'/post/:id',
