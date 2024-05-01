@@ -1,21 +1,26 @@
 import React from 'react'
 import techImage from '../assets/images/tech-new.jpeg'; // Import the image
 import { MdReadMore } from "react-icons/md";
+import FashionImage from '../assets/images/fashion1.png'; // Import the image
+import HealthImage from '../assets/images/heathewell.jpeg';
+import MarkImage from '../assets/images/marketing.jpeg';
 
+import businImage  from '../assets/images/busuness.jpeg';
 
 const Menu = () => {
     const posts = [
         {id: 1,
         title: "Business",
         desc: "Let me share my experiences with Temu and Homary as they compare to their far more expensive U.S. and Japanese competitors. We’ll end with my Product of the Week, the Qualcomm Snapdragon X Elite, which is currently between six and 12 months ahead of AMD and Intel and sets the near-term bar for the...",
-        img: techImage
+        img: businImage
         },
         
           {id: 2,
             title: "Fashion",
             desc:"Let me share my experiences with Temu and Homary as they compare to their far more expensive U.S. and Japanese competitors. We’ll end with my Product of the Week, the Qualcomm Snapdragon X Elite, which is currently between six and 12 months ahead of AMD and Intel and sets the near-term bar for the...",
-            img: techImage}
-            ,
+            img: FashionImage
+          },
+            
             {id: 3,
               title: "Technology",
               desc:"Let me share my experiences with Temu and Homary as they compare to their far more expensive U.S. and Japanese competitors. We’ll end with my Product of the Week, the Qualcomm Snapdragon X Elite, which is currently between six and 12 months ahead of AMD and Intel and sets the near-term bar for the...",
@@ -23,11 +28,11 @@ const Menu = () => {
               {id: 4,
                 title: "Health and wellness",
                 desc:"Let me share my experiences with Temu and Homary as they compare to their far more expensive U.S. and Japanese competitors. We’ll end with my Product of the Week, the Qualcomm Snapdragon X Elite, which is currently between six and 12 months ahead of AMD and Intel and sets the near-term bar for the...",
-                img: techImage},
+                img: HealthImage},
                 {id: 5,
                   title: "Marketing",
                   desc:"Let me share my experiences with Temu and Homary as they compare to their far more expensive U.S. and Japanese competitors. We’ll end with my Product of the Week, the Qualcomm Snapdragon X Elite, which is currently between six and 12 months ahead of AMD and Intel and sets the near-term bar for the...",
-                  img: techImage},
+                  img:  MarkImage},
         
         ]
   return (
